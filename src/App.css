@@ -10,7 +10,7 @@
 .Calculator
 {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   overflow: hidden;
   align-items: center;
   background-color: #7ff1a9;
@@ -22,15 +22,19 @@
 {
   text-align: right;
   width: 100%;
-  padding: 5px 0;
+  height: 60px;
+  padding: 20px 0;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .Calculator-display-text
 {
-  font-size: 25px;
+  font-size: 50px;
   font-family: monospace;
   font-weight: bold;
   color: green;
+  padding: 0 20px;
 }
 
 Button
@@ -38,12 +42,18 @@ Button
   border-radius: 5px;
 }
 
+.Calculator-keypad
+{
+  padding: 10px 0;  
+}
+
 .Calculator-operators
 {
-  padding-left: 15px;  
+  padding-left: 10px;
 }
 
 .Calculator-numbers
 {
-  padding-left: 35px;
+  padding-left: 20px;
 }
+
