@@ -3,7 +3,6 @@ import {useState} from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import BackspaceOutlinedIcon from '@mui/icons-material/BackspaceOutlined';
-import { Input } from '@mui/material';
 
 function App() {
   const [calculator, setCalculator] = useState('');
