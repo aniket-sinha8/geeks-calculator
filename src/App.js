@@ -27,6 +27,59 @@ function App() {
     }
   };
 
+  const keypress = (e) => {
+    if(e.key === '1') {
+      updateCalculator('1');
+    } else if(e.key === '2') {
+      updateCalculator('2');
+    } else if(e.key === '3') {
+      updateCalculator('3');
+    } else if(e.key === '4') {
+      updateCalculator('4');
+    } else if(e.key === '5') {
+      updateCalculator('5');
+    } else if(e.key === '6') {
+      updateCalculator('6');
+    } else if(e.key === '7') {
+      updateCalculator('7');
+    } else if(e.key === '8') {
+      updateCalculator('8');
+    } else if(e.key === '9') {
+      updateCalculator('9');
+    } else if(e.key === '0') {
+      updateCalculator('0');
+    } else if(e.key === '+') {
+      updateCalculator('+');
+    } else if(e.key === '-') {
+      updateCalculator('-');
+    } else if(e.key === '*') {
+      updateCalculator('*');
+    } else if(e.key === '/') {
+      updateCalculator('/');
+    } else if(e.key === '.') {
+      updateCalculator('.');
+    } else if(e.key === '.') {
+      updateCalculator('.');
+    } else if (e.key === '=') {
+      setCalculator(eval(calculator).toString());
+      setResult(eval(calculator).toString());
+    }
+  };
+
+  onkeypress = keypress;
+
+  const keydown = (e) => {
+    if(e.key === 'Backspace') {
+      setCalculator(calculator.slice(0, -1));
+      setResult(calculator.slice(0, -1));
+    }
+    else if(e.key === 'Enter')  {
+      setCalculator(eval(calculator).toString());
+      setResult(eval(calculator).toString());
+    }
+  };
+
+  onkeydown = keydown;
 
   const clearCalculator = () => {
     setCalculator('');
