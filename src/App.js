@@ -96,6 +96,7 @@ function App() {
     setResult(eval(calculator).toString());
   };
 
+
   return (
     <div className="App">
       <div className='Calculator'>
@@ -107,30 +108,30 @@ function App() {
           <Grid container spacing={0}>
               <Grid item xs={2}>
                 <div className='Calculator-operators'>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('/')}>/</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('*')}>*</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('-')}>-</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('+')}>+</Button>
-                  <Button color='success' variant="contained" onClick={() => calculate()}>=</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('/')}>/</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('*')}>*</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('-')}>-</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('+')}>+</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => calculate()}>=</Button>
                 </div>
               </Grid>
 
               <Grid item xs={10}>
                 <div className='Calculator-numbers'>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('7')}>7</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('8')}>8</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('9')}>9</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('4')}>4</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('5')}>5</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('6')}>6</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('1')}>1</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('2')}>2</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('3')}>3</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('0')}>0</Button>
-                  <Button color='success' variant="contained" onClick={() => updateCalculator('.')}>.</Button>
-                  <Button color='success' variant="contained" onClick={() => deleteLast()}><BackspaceOutlinedIcon /></Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('7')}>7</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('8')}>8</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('9')}>9</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('4')}>4</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('5')}>5</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('6')}>6</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('1')}>1</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('2')}>2</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('3')}>3</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('0')}>0</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => updateCalculator('.')}>.</Button>
+                  <Button style={{ border: '1px solid' }} color='success' variant="contained" onClick={() => deleteLast()}><BackspaceOutlinedIcon /></Button>
 
-                  <Button style={{ padding: "6px 73.5px" }} color='success' variant="contained" onClick={() => clearCalculator()}>CLEAR</Button>
+                  <Button style={{ padding: "6px 73.5px", border: '1px solid' }} color='success' variant="contained" onClick={() => clearCalculator()}>CLEAR</Button>
                 </div>
               </Grid>
             </Grid>
